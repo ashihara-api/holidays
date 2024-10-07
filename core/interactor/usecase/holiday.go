@@ -11,7 +11,7 @@ var defaultFields = []string{
 func dropFields(h *entity.Holiday, fields []string) *entity.Holiday {
 	fs := fields
 	if h == nil {
-		return h
+		return nil
 	}
 	if len(fs) == 0 {
 		fs = defaultFields

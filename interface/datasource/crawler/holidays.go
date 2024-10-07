@@ -71,7 +71,8 @@ func (d *holidayImpl) Crawl(ctx context.Context) (output []*repository.HolidayEn
 	}()
 
 	r := transform.NewReader(rb, japanese.ShiftJIS.NewDecoder())
-	hs := []*holiday{}
+	var hs []*holiday
+
 	if err = gocsv.Unmarshal(r, &hs); err != nil {
 		d.logger.ErrorContext(
 			ctx,
