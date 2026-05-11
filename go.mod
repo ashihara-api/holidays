@@ -1,6 +1,6 @@
 module github.com/ashihara-api/holidays
 
-go 1.22.1
+go 1.25.0
 
 require (
 	github.com/ashihara-api/core v0.0.3
@@ -10,7 +10,7 @@ require (
 	github.com/jmoiron/sqlx v1.3.5
 	github.com/usk81/aveo v0.0.2
 	github.com/usk81/toolkit/pointer v0.0.1
-	golang.org/x/text v0.14.0
+	golang.org/x/text v0.37.0
 )
 
 require (
